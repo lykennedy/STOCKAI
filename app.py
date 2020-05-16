@@ -1,6 +1,28 @@
-from tensorflow.keras.datasets import fashion_mnist
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.utils import to_categorical
+# import tensorflow as tf
+# from tesnorflow import keras
+# import numpy as np
+# import matplotlib.pyplot as plt
 
-print("Hello There, we are able to import said classes")
+# data = keras.datasets.fashion_mnist
+# (train_images, train_labels), (test_images, test_labels) = data.load_data()
+Labels = {
+    0: "T-Shirt",
+    1: "Trouser",
+    2: "Pullover",
+    3: "Dress",
+    4: "Coat",
+    5: "Sandal",
+    6: "Shirt",
+    7: "Sneaker",
+    8: "Bag",
+    9: "Ankle Boot"
+}
+
+
+def passByRef(aList):
+    aList.append("Something")
+
+
+aList = []
+passByRef(aList)
+print(aList)
